@@ -36,6 +36,7 @@
 \newtheorem{theorem}{Theorem}
 
 % Declare norms and absolute value
+% http://tex.stackexchange.com/a/43009/62694
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}%
 \DeclarePairedDelimiter\norm{\lVert}{\rVert}%
 % Swap the definition of \abs* and \norm*, so that \abs and \norm resizes the size of the brackets, and the starred version does not.
@@ -48,6 +49,7 @@
 \makeatother
 
 % Triple norm
+% https://tex.stackexchange.com/a/54392
 \newcommand{\tnorm}[1]{{\left\vert\kern-0.25ex\left\vert\kern-0.25ex\left\vert #1\right\vert\kern-0.25ex\right\vert\kern-0.25ex\right\vert}}
 
 % Generate links from DOIs
@@ -57,8 +59,8 @@
 \newcommand{\fa}[1]{\textcolor{magenta}{FA:~#1}} \newcommand{\sa}[1]{\textcolor{blue}{SA:~#1}}
 \newcommand{\ta}[1]{\textcolor{orange}{TA:~#1}}
 
-% You can add custom commands here
-\newcommand{\vecu}{}
+% You can add your custom commands here
+\newcommand{\vecu}{\bm{u}}
 
 % Title
 \title{Name of the manuscript}
@@ -123,7 +125,7 @@ Figures are added in the usual way, see the code for Figure~\ref{fig:md_geo}. Yo
 
 \section{Second section\label{sec:second_sec}}
 
-Operators for absolute value $\abs{x}$, norm $\norm{p}$, and triple norm $\tnorm{\nabla p}$ are readily available.
+Operators for absolute value $\abs{x}$, norm $\norm{p}$, and triple norm $\tnorm{\vecu}$ are readily available.
 
 \section{Third section\label{sec:third_sec}}
 
